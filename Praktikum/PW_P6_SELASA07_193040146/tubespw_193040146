@@ -1,0 +1,54 @@
+-- Database: `tubespw_193040146`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `elektronik`
+--
+
+CREATE TABLE `alat_musik` (
+  `id` int(11) NOT NULL,
+  `Gambar` varchar(30) NOT NULL,
+  `Code_barang` varchar(30) NOT NULL,
+  `Merk` varchar(30) NOT NULL,
+  `Jenis` varchar(30) NOT NULL,
+  `Harga` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `elektronik`
+--
+
+INSERT INTO `elektronik` (`id`, `Gambar`, `Code_barang`, `Merk`, `Jenis`, `Harga`) VALUES
+(1, 'tv.jpg', 'CO001', 'Philips 32PHT5853S Smart Android', 'LED HD Tv 32inch', '2250000'),
+(2, 'laptop,jpg', 'DO146', 'MSI GE62 2QC/6QC Apache', 'Pro Intel Core i7-6700HQ, CPU Speed 2.6 Ghz RAM 8', '15150000'),
+(3, 'radio.jpg', 'BO025', 'DC 4.5V 3W Portable World Band', 'Radio AM FM SW Receiver Speaker', '429000'),
+(4, 'speker.jpg', 'JF022', 'JBL Micro Wireless Ultra', 'Portable Bluetooth Speaker', '975000'),
+(5, 'kipas.jpg', 'R1205', 'Sharp Air Cooler PJA26MYB', 'AC Pendingin Ruangan', '840000'),
+(6, 'kulkas.jpg', 'F1024', 'Samsung RS22HZNBP', 'Side by Side, Fitur', '14900000'),
+(7, 'dvd.jpg', 'K0306', 'Chiko DVD Player', 'Dual Port Karaoke', '185000'),
+(8, 'kamera.jpg', 'R1432', 'Sony Cyber-shot W810', 'Lightweight and compact 20.1 megapixel 1/2.3', '1230000'),
+(9, 'pmg.jpg', 'B7016', 'Denpoo Dt022d', 'Pemanggang Roti Listrik', '180000'),
+(10, 'print.jpg', 'F1202', 'Epson Expression ET-2750', 'Ecotank All-In-One inject printer', '1230000');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `elektronik`
+--
+ALTER TABLE `elektronik`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `elektronik`
+--
+ALTER TABLE `elektronik`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+COMMIT;
